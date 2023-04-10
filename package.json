@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.2.0"
+    "astro": "^2.2.3"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.16.5",
-    "@astrojs/netlify": "^2.2.0"
+    "@astrojs/image": "^0.16.6",
+    "@astrojs/netlify": "^2.2.2"
   }
 }
