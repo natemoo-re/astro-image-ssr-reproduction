@@ -1,5 +1,5 @@
 ---
-import { Image, Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import exampleImage from "../images/example.jpg";
 ---
@@ -19,26 +19,6 @@ import exampleImage from "../images/example.jpg";
       <div>
         <h3>Image loaded from `public`</h3>
         <Image src="/example.jpg" alt="" width={300} height={300} />
-      </div>
-      <div>
-        <h3>Picture loaded from `src`</h3>
-        <Picture
-          src={exampleImage}
-          alt=""
-          widths={[300]}
-          aspectRatio="1:1"
-          sizes="(max-width: 800px) 100vw, 800px"
-        />
-      </div>
-      <div>
-        <h3>Picture loaded from `public`</h3>
-        <Picture
-          src="/example.jpg"
-          alt=""
-          widths={[300]}
-          aspectRatio="1:1"
-          sizes="(max-width: 800px) 100vw, 800px"
-        />
       </div>
     </ul>
   </main>
